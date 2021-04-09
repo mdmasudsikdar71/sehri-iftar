@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:text="@string/warning"
+                android:textColor="@android:color/holo_red_light"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="72dp"
+                android:src="@drawable/warning"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="103dp"
+                tools:layout_editor_absoluteY="40dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="@string/empty_district"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="118dp" />
+
+            <Button
+                android:id="@+id/choose_district"
+                android:layout_width="124dp"
+                android:layout_height="67dp"
+                android:text="OK"
+                android:textSize="20sp"
+                app:backgroundTint="#4CAF50"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="250dp" />
+
+            <ImageView
+                android:id="@+id/close_empty_district_dialog"
+                android:layout_width="41dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_close_24"
+                tools:layout_editor_absoluteX="309dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

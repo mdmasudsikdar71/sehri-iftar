@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activities.AboutUs">
+
+    <ImageView
+        android:id="@+id/back_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/about_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/galada"
+        android:gravity="center_horizontal"
+        android:text="@string/about_company"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/company_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/about_company"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tag_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:padding="2dp"
+        android:text="@string/tag_line"
+        android:layout_below="@id/company_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/tag_line"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif"
+                        android:layout_gravity="center"
+                        android:text="@string/mobile"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/galada"
+                        android:gravity="start"
+                        android:text="@string/about_us"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/rate_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/teal_200"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:text="@string/rate_us"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
