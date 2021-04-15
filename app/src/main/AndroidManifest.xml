@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.SehriIftarTimeAndDua">
-        <activity android:name=".activities.DistrictList"></activity>
+        <activity android:name=".activities.RojayKoroniyo"></activity>
+        <activity android:name=".activities.DistrictList" />
         <activity android:name=".activities.AboutUs" />
         <activity android:name=".activities.IftarerNiyat" />
         <activity android:name=".activities.RojarNiyat" />

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    android:padding="10dp"
+    tools:context=".activities.RojayKoroniyo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/rojar_tatporjo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galada"
+            android:gravity="center_horizontal"
+            android:text="@string/rojar_tatporjo"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+
+
+        <ScrollView
+            android:layout_below="@id/rojar_tatporjo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/rojar_tatporjo_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_tatporjo_description"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo"
+                    android:layout_below="@+id/rojar_tatporjo_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:text="করণীয়"
+                    android:textColor="@color/teal_700"
+                    android:textSize="35sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/roja_rakhe"
+                    android:layout_below="@+id/rojar_koroniyo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="এক. রোযা রাখা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_roja_rakhe"
+                    android:layout_below="@id/roja_rakhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_koroniyo_roja_rakhar"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_taribir_namaz_pora"
+                    android:layout_below="@+id/rojar_koroniyo_roja_rakhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="দুই. তারাবীহ নামাজ পড়া"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_taribir_namaz_pora_details"
+                    android:layout_below="@id/rojar_koroniyo_taribir_namaz_pora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_koroniyo_taribir_namaz_pora"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_telyat_kora"
+                    android:layout_below="@+id/rojar_koroniyo_taribir_namaz_pora_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="তিন. কোরআন তেলাওয়াত করা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_telyat_kora_details"
+                    android:layout_below="@id/rojar_koroniyo_koryan_telyat_kora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_koroniyo_koryan_telyat_kora"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_sehri_khaya"
+                    android:layout_below="@+id/rojar_koroniyo_koryan_telyat_kora_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="চার. সাহরী খাওয়া"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_sehri_khaya_details"
+                    android:layout_below="@id/rojar_koroniyo_koryan_sehri_khaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_koroniyo_koryan_sehri_khaya"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_iftar_khaya"
+                    android:layout_below="@+id/rojar_koroniyo_koryan_sehri_khaya_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="পাঁচ. ইফতার করা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_iftar_khaya_details"
+                    android:layout_below="@id/rojar_koroniyo_koryan_iftar_khaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_koroniyo_koryan_iftar_khaya"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_iftar_khayano"
+                    android:layout_below="@+id/rojar_koroniyo_koryan_iftar_khaya_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="ছয়. রোযাদারকে ইফতার করানো"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_iftar_khayano_details"
+                    android:layout_below="@id/rojar_koroniyo_koryan_iftar_khayano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="হযরত যায়েদ ইবনে খালেদ রাদি. থেকে বর্র্ণিত, রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেছেন, যে ব্যক্তি কোনো রোযাদারকে ইফতার করাবে, সে তার (রোযাদারের) অনুরূপ প্রতিদান লাভ করবে। তবে রোযাদারের প্রতিদান থেকে বিন্দুমাত্রও হ্রাস করা হবে না।\n\n\t-সুনানে তিরমিযী : ৮০৭\n\n"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_istigfar_kora"
+                    android:layout_below="@+id/rojar_koroniyo_koryan_iftar_khayano_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="সাত. তাওবা-ইস্তিগফার করা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_istigfar_kora_details"
+                    android:layout_below="@id/rojar_koroniyo_koryan_istigfar_kora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="আল্লাহ তাআলা এ মাসে অসংখ্য জাহান্নামীকে মুক্তি দান করেন। যেমন রাসূলে কারীম সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেন, আল্লাহ এ মাসের প্রতিরাতে অসংখ্য জাহান্নামীকে মুক্তি দান করেন।\n\n\t-মুসনাদে আহমাদ : ১৮৭৯৪\n\nসুতরাং আমাদের কর্তব্য তাওবা-ইস্তিগফার করা। কেননা, যে ক্ষমা চায় তাওবা করে তাকেই আল্লাহ ক্ষমা করে দেন। অন্য কাউকে নয়।\n\n"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_doya_kora"
+                    android:layout_below="@+id/rojar_koroniyo_koryan_istigfar_kora_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="আট. দুআ করা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_koroniyo_koryan_doya_kora_details"
+                    android:layout_below="@id/rojar_koroniyo_koryan_doya_kora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_koroniyo_koryan_doya_kora"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo"
+                    android:layout_below="@+id/rojar_koroniyo_koryan_doya_kora_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:layout_gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:text="বর্জনীয়"
+                    android:textColor="@color/teal_700"
+                    android:textSize="35sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_shorgol_kora"
+                    android:layout_below="@+id/rojar_borjoniyo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="এক. অশ্লীল কথা বলা এবং শোরগোল করা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_shorgol_kora_details"
+                    android:layout_below="@id/rojar_borjoniyo_shorgol_kora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="@string/rojar_borjoniyo_shorgol_kora"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_mittha"
+                    android:layout_below="@+id/rojar_borjoniyo_shorgol_kora_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="দুই. মিথ্যা কথা বলা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_mittha_details"
+                    android:layout_below="@id/rojar_borjoniyo_mittha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম আরও ইরশাদ করেছেন, যে রোযা রেখেছে অথচ মিথ্যাচার পরিহার করেনি, তার এই কৃত্রিম পানাহার বর্জনের কোনো প্রয়োজন আল্লাহর নেই।\n\n\t-সহীহ বুখারী : ১৯০৩\n\n"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_onorthok_kotha"
+                    android:layout_below="@+id/rojar_borjoniyo_mittha_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="তিন. অনর্থক কথা বা কাজ করা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_onorthok_kotha_details"
+                    android:layout_below="@id/rojar_borjoniyo_onorthok_kotha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="হযরত আবু হুরায়রা রাদি. বলেন, রাসূল সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেছেন, রোযা শুধু পানাহার বর্জন করার নাম নয়; বরং রোযা হলো অনর্থক কথা ও কাজ এবং অশ্লীল কথা বর্জন করা।\n\n\t-মুসতাদরাকে হাকেম : ১/৫৩৯, হাদীস নং : ১৬০২\n\n"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_gibot_na_kora"
+                    android:layout_below="@+id/rojar_borjoniyo_onorthok_kotha_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/galada"
+                    android:gravity="center"
+                    android:text="চার. গীবত করা"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple_500"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/rojar_borjoniyo_gibot_na_kora_details"
+                    android:layout_below="@id/rojar_borjoniyo_gibot_na_kora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/galada"
+                    android:justificationMode="inter_word"
+                    android:text="হাদীস শরীফে বর্ণিত আছে, নবী কারীম সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম এর দরবারে দুজন মহিলা উপস্থিত হয়ে (দরজার বাইরে থেকে) অভিযোগ করল, রোযার কারণে তাদের খুব কষ্ট হচ্ছে। পিপাসার কারণে প্রাণ ওষ্ঠাগত প্রায়। এ অবস্থা শুনে তিনি লোকমারফতে তাদের বমি করার আদেশ দিলেন। দেখা গেল, গোশতের টুকরা ও তাজা রক্ত বের হচ্ছে।\n\nসাহাবায়ে কেরাম রাদি. অবাক হলেন। তখন নবীজী সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বললেন, এরা হালাল খাদ্য দ্বারা সাহরী করে রোযা রেখেছে, কিন্তু রোযা অবস্থায় হারাম খেয়েছে। অর্থাৎ মানুষের গীবত করেছে। আর গীবত করার অর্থ হলো মৃত ভাইয়ের গোশত খাওয়া।\n\n\t-মুসনাদে আহমাদ : ২৩৬৫৩\n\nএ হাদীস দ্বারা বোঝা যায়, গীবত ও অন্যান্য গোনাহ দ্বারা রোযার কষ্ট অনেক বেড়ে যায়। এ কারণেই দেখা যায় আল্লাহর নেক বান্দারা রোযার তেমন কোনো কষ্ট অনুভব করেন না; বরং তারা অনেক আত্মিক, এমনকি দৈহিক শান্তি লাভ করে থাকেন। পক্ষান্তরে যারা গীবত করে এবং বিভিন্ন গোনাহে লিপ্ত থাকে তারা রোযার কারণে বেশ কাহিল হয়ে পড়ে। ফলে বিভিন্ন বাহানা করে রোযা থেকে রেহাই পেতে চায়। আল্লাহ তাআলা আমাদেরকে তাঁর সন্তুষ্টি মোতাবেক রমজান কাটানোর তাওফীক দান করুন। আমীন।"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/share_now"
+            android:layout_width="180dp"
+            android:layout_height="166dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/share"
+            android:src="@drawable/share"
+            app:backgroundTint="#E91E63"
+            app:maxImageSize="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

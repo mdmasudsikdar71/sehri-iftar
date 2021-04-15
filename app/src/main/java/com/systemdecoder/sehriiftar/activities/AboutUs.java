@@ -8,15 +8,15 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.systemdecoder.sehriiftar.R;
 
 public class AboutUs extends AppCompatActivity {
 
     ImageView back_to_home;
-    TextView rate_us;
+    Button rate_us;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

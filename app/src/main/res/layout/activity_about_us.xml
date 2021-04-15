@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
     android:padding="10dp"
     tools:context=".activities.AboutUs">
 
@@ -42,7 +43,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:layout_below="@id/about_company"
-        android:textSize="30sp"/>
+        android:textSize="25sp"/>
 
     <TextView
         android:id="@+id/tag_line"
@@ -55,9 +56,11 @@
         android:layout_below="@id/company_name"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:textSize="15sp"/>
 
     <ScrollView
+        android:id="@+id/about_company_details"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_below="@id/tag_line"
         android:layout_height="wrap_content">
@@ -66,7 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:columnCount="1"
-            android:rowCount="3">
+            android:rowCount="1">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
@@ -76,59 +79,44 @@
                 android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
-                android:layout_margin="5dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="20dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_margin="10dp"
                         android:fontFamily="sans-serif"
                         android:layout_gravity="center"
                         android:text="@string/mobile"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_margin="5dp"
                         android:layout_gravity="center"
                         android:fontFamily="sans-serif"
                         android:text="@string/email"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/galada"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
                         android:gravity="start"
                         android:text="@string/about_us"
                         android:textAlignment="textStart"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/rate_us"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@color/teal_200"
-                        android:layout_marginTop="30dp"
-                        android:layout_gravity="center"
-                        android:padding="10dp"
-                        android:textColor="@color/black"
-                        android:textAlignment="center"
-                        android:text="@string/rate_us"
-                        android:textSize="25sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -138,5 +126,24 @@
         </GridLayout>
 
     </ScrollView>
+
+    <Button
+        android:id="@+id/rate_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_company_details"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/rate_us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="#FFEB3B"
+        app:cornerRadius="15dp" />
 
 </RelativeLayout>
